@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(168, 220, 203);
+}
+
+h1{
+    text-align: center;
+    color: rgb(28, 179, 71);
+}
+
+h2{
+    text-align: left;
+    color: rgb(165, 42, 42);
+}
+
+#p1{
+    color: rgb(53, 53, 143);
+    text-align: justify;
+    font-size: 15px;
+    
+}
+
+#p2{
+    color: blueviolet;
+    text-align: right;
+    font-size: 17px;
+}
