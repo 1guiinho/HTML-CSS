@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+</head>
+<body>
+        <h1>Cadastro</h1>
+         <form action="" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome"><br><br>
+
+            <label for="Sobrenome">Sobrenome:</label><br>
+            <input type="text" name="Sobrenome"><br><br>
+
+            <label for="E-mail">E-mail:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label for="Telefone">Telefone:</label><br>
+            <input type="tel" name="telefone"><br><br>
+
+            <label for="whatsapp/celular">Whatsapp/Celular:</label><br>
+            <input type="tel" name="whatsapp"><br><br>
+
+            <label for="data">Data de Nascimento:</label><br>
+            <input type="date" name="data"><br><br>
+
+            <label for="cpf">CPF:</label><br>
+            <input type="number" name="cpf"><br><br>
+
+            <label for="rg">RG:</label><br>
+            <input type="number" name="Sobrenome"><br><br>
+
+            <label for="Endereço">Endereço:</label><br>
+            <input type="text" name="Endereço" placeholder="Rua, avenida..."><br><br>
+
+            <label for="numero">Número:</label><br>
+            <input type="number" name="numero"><br><br>
+
+            <label for="complemento">Complemento:</label><br>
+            <input type="text" name="complemento"><br><br>
+
+            <label for="bairro">Bairro:</label><br>
+            <input type="text" name="bairro"><br><br>
+
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" name="cidade"><br><br>
+
+            <label for="estado">Estado (UF):</label><br>
+            <select name="estado" id="estado">
+
+                <option value="Selecione">Selecione</option>
+                <option value="sp">Sâo Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="es">Espirito Santo</option>
+                <option value="ds">Distrito Federal</option>
+
+            </select> <br><br>
+
+            <label for="cep">CEP:</label><br>
+            <input type="text" name="cep"><br><br>
+
+            <label for="genero">Gênero:</label><br>
+            <select name="genero" id="genero">
+
+                <option value="Selecione">Selecione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                
+            </select><br><br>
+
+            <label for="EC">Estado Civil:</label><br>
+            <select name="EC" id="EC">
+                <option value="Selecione">Selecione</option>
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="viuvo">Viuvo</option>
+                <option value="divirciado">Divorciado</option>
+
+            </select><br><br>
+
+            <label for="arquivo">Anexar Arquivo:</label><br>
+            <input type="file" name="arquivo"> <br><br>
+
+            <button id="Enviar" type="submit">Enviar</button>
+            <button id="Cancelar" type="reset">Cancelar</button>
+
+    </form>
+    <br>
+    <p>
+        Já tem conta?
+        <a href="/index.html">Voltar para o Login</a>
+    </p>
+</body>
+</html>
