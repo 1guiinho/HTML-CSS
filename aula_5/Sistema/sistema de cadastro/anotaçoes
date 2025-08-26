@@ -1,0 +1,8 @@
+# serve para selecionar um elemento pelo id="" ; identificação unica, ou seja, cada elemento com sua própria formatação e estilo
+
+. serve para selecionar um elemento pela classe: class="" ; possivel copiar a formatação de um elemento para outro, padronizando o site
+
+padding: espaçamento interno do elemento
+margin: espaçamento externo do elemento.
+
+div: serve para organizar elementos
