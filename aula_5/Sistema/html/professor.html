@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Professor</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Cadastro Escolar</h1>
+        <p>Bem-vindos ao sistema de cadastro da nossa escola virtual</p>
+
+        <h2>📋Menu de Cadastro</h2>
+        <a href="/html/aluno.html"><button class="button">👨‍🎓Cadastrar aluno</button></a>
+        <a href="/html/professor.html"><button class="button">👨‍🏫Cadastrar professor</button></a>
+        <a href="/html/curso.html"><button class="button">🗒️Cadastrar curso</button></a>
+        <a href="/html/livro.html"><button class="button">📖Cadastrar livro</button></a>
+        
+        <div class="formulario">
+            <h2>👨‍🏫Cadastrao de professor</h2>
+            <form action="">
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" name="nome"><br><br>
+                
+                <label for="nome">CPF:</label><br>
+                <input type="number" name="cpf"><br><br>
+
+                <label for="email">Email Institucional:</label><br>
+                <input type="text" name="email"><br><br>
+
+                <label for="serie">Formação:</label><br>
+                <select name="serie" id="serie">
+
+                    <option value="selecione">Selecione a formação</option>
+                    <option value="em">Ensino Médio</option>
+                    <option value="esp">Especialização</option>
+                    <option value="grd">Graduação</option>
+                    <option value="mst">Mestrado</option>
+                    <option value="drt">Doutorado</option>
+
+                </select> <br><br>  
+
+                <label for="periodo">Disciplinas que Leciona:</label><br>
+                <input type="checkbox" name="" id=""> Matemática <br>
+                <input type="checkbox" name="" id=""> Português <br>
+                <input type="checkbox" name="" id=""> História <br>
+                <input type="checkbox" name="" id=""> Geografia <br>
+                <input type="checkbox" name="" id=""> Ciências <br>
+                <input type="checkbox" name="" id=""> Educação Física <br><br>
+
+                <label for="">Carga Horária Semanal:</label><br>
+                <input type="number" name="carga_horaria" min="0" max="10"> horas <br><br>
+
+                <label for="">Experiência (anos):</label><br>
+                <input type="number" name="carga_horaria" min="0" max="10"> anos <br><br>
+
+                <label for="atividades">Disponibilidade:</label> <br>
+                <input type="radio">Período Integral <br>
+                <input type="radio">Período Parcial <br><br>
+
+                <button class="button" type="submit" style="border-radius: 0px;">Cadastrar Aluno</button>
+
+                <button class="button" type="reset" style="border-radius: 0px;">Limpar Dados</button>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
