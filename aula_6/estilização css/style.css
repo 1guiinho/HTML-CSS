@@ -1,0 +1,39 @@
+#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 3px solid rgb(255, 255, 255) ;
+    ;
+}
+
+.box-1{
+    background-color: rgb(255, 248, 196);
+    border: 3px solid black;
+    color: black;
+}
+
+.box-2{
+    background-color: rgb(129, 129, 241);
+    border: 3px solid yellow;
+    color: white;
+}
+
+.box-3{
+    background-color: rgb(191, 191, 249);
+    border: 3px solid rgb(0, 8, 255);
+    color: rgb(20, 0, 109);
+}
+
+.box-4{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(129, 0, 0);
+    color: rgb(129, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
