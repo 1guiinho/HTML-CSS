@@ -1,0 +1,145 @@
+p{
+    color: blue;
+}
+
+#title{
+    background-color: yellow;
+}
+
+.subtitles{
+    color: green;
+}
+
+ul li{
+    color: brown;
+}
+
+.box1{
+    background-color: red;
+    color: red;
+}
+
+.box2{
+    background-color: black;
+}
+
+.texts{
+    color: rgb(196, 201, 255);
+}
+
+#paragraph_center{
+    text-align: center;
+    color: black;
+}
+
+#link_a{
+    color: #2b2b2b;
+}
+
+#link_b{
+    color: #8e0000;
+}
+
+.paragraph_class{
+    font-weight: 800;
+    color: rgb(63, 63, 63);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 0;
+}
+
+.image_css{
+    padding: 5px 25px;
+    width: 150px;
+}
+
+div p{
+    color: #8e0000;
+}
+
+.p_class1{
+    color: green;
+}
+
+.p_class2{
+    color: yellowgreen;
+}
+
+#text_font{
+    font-family: Arial;
+}
+
+.negrit{
+    font-weight: bold;
+    color: black;
+}
+
+.italic{
+    font-style: italic;
+    color: black;
+}
+
+.sublinhad{
+    text-decoration: underline;
+    color: black;
+}
+
+div h3{
+    padding: 5px 30px;
+    background-color: black;
+    color: #FFF;
+    width: 400px;
+    text-align: center;
+}
+
+.squares{
+    display: flex;
+}
+
+#square1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+}
+
+#square2{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+}
+
+#square3{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+}
+
+span{
+    color: rgb(132, 72, 72);
+}
+
+#person_box{
+    width: 400px;
+    height: 200px;
+    background-color: #fff0ff;
+    border: 1px solid #000;
+}
+
+.sub_link{
+    text-decoration: underline;
+    color: rgb(143, 86, 197);
+    margin: 10px 0px;
+    display: flex;
+}
+
+.footer{
+    color: rgb(148, 0, 119);
+}
