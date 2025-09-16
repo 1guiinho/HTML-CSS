@@ -1,0 +1,3 @@
+-a tag <tr></tr> serve para organizar os elementos da sua tabela em linhas
+-a tag <th></th> serve para eu colocar o título da tabela
+-a tag <td></td> serve para inserir dados basedado no título
