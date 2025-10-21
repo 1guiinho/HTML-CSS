@@ -1,0 +1,56 @@
+*{
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+body{
+    background-color: #333333;
+    padding: none;
+    margin: 0;
+}
+
+#header{
+    background-color: #666666;
+    height: 50px;
+    display: flex;
+    margin-top: -20px;
+}
+
+nav{
+    background-color: #999999;
+    height: 20px;
+    width: 250px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.content{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #666666;
+    width: 900px;
+    height: 400px;
+}
+
+main header, article, footer{
+    background-color: #999999;
+}
+
+article{
+    height: 170px;
+}
+
+aside{
+    background-color: #666666;
+    width: 500px;
+}
+
+#footer{
+    background-color: #666666;
+    height: 50px;
+}

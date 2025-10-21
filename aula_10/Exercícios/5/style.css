@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem 1rem;
+  background: #fafafa;
+}
+
+.container {
+  margin: 0 auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(10,10,10,0.04);
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+}
+
+.content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main p {
+  margin: 0 0 1rem 0;
+  text-align: justify;
+}
+
+aside {
+  float: right;
+  width: 300px;
+  margin-left: 1rem;
+  background: #e6f7ff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+aside h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+aside ul {
+  padding-left: 1.15rem;
+  margin: 0.25rem 0 0 0;
+  color: #555;
+}
+
+footer {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 720px) {
+  aside {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
