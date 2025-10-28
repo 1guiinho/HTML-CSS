@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#showcase{
+    background-color: transparent;
+    border-left: 5px solid black;
+    padding: 200px 40px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+/* Fundo atrás do título principal */
+.showcase-header {
+  margin-top: 80px;
+  background-image: url('https://images.adsttc.com/media/images/5c90/3af7/284d/d1e4/9400/089c/newsletter/2.jpg?1552956118'); /* caminho da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* deixa o texto visível */
+  padding: 120px 16px; /* adiciona espaço interno */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.797); /* melhora legibilidade */
+  border-radius: 8px; /* opcional: cantos arredondados */
+}
+
+
+/* Sidebar/menu */
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #3c3c3c;
+  overflow-x: hidden;
+  padding: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: rgb(103, 102, 102);
+}
+
+.sidebar .close-btn {
+  display: none;
+  width: 100%;
+  font-size: 22px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar .container {
+  padding: 0;
+}
+
+.sidebar h3 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.sidebar .nav-links {
+  display: block;
+}
+
+.sidebar .nav-links a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sidebar .nav-links a:hover {
+  background-color: white;
+  color: #000;
+}
+
+/* Top menu mobile */
+.top-header {
+  display: none;
+  background-color: #3c3c3c;
+  color: white;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  font-size: 24px;
+}
+
+.top-header .menu-btn {
+  background-color: #3c3c3c;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 340px;
+  margin-right: 40px;
+}
+
+.container {
+  padding: 0.01em 16px;
+}
+
+.showcase-header {
+  margin-top: 80px;
+}
+
+.jumbo {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.xxxlarge {
+  font-size: 48px;
+}
+
+.text-red {
+  color: #616161;
+}
+
+.text-red1{
+    color: white;
+}
+
+.section-divider {
+  width: 50px;
+  border: 5px solid #616161;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+#divider1{ 
+    width: 50px;
+  border: 5px solid #ffffff;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* Photo grid */
+.row-padding {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half {
+  width: 50%;
+  padding: 0 8px;
+}
+
+.half img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: -6px;
+  margin-top: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+  display: block;
+}
+
+.half img:hover {
+  opacity: 1;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 64px;
+  animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-content p {
+  color: white;
+  margin-top: 20px;
+}
+
+.modal .close-modal {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  margin-top: 75px;
+}
+
+/* Team */
+.team-row {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-col {
+  width: 33.33333%;
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.team-card {
+  background-color: #f1f1f1;
+  height: 500px;
+}
+
+.team-card img {
+  width: 100%;
+  height: 250px;
+  filter: grayscale(100%);
+}
+
+.team-card .container {
+  padding: 16px;
+}
+
+.team-card h3 {
+  margin: 10px 0;
+}
+
+.team-card .opacity {
+  opacity: 0.6;
+}
+
+/* Packages */
+.pricing-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.pricing-list li {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pricing-list .header {
+  background-color: #616161;
+  color: white;
+  font-size: 24px;
+  padding: 32px 16px;
+}
+
+.pricing-list .headerDeluxe {
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  padding: 32px 16px;
+}
+
+.pricing-list .headerpro {
+  background-color: rgb(255, 17, 0);
+   color: white;
+  font-size: 24px;
+  padding: 32px 16px;
+}
+
+.pricing-list h2 {
+  margin: 0;
+}
+
+.pricing-list .opacity {
+  opacity: 0.6;
+}
+
+.pricing-list .button-container {
+  background-color: #f1f1f1;
+  padding: 24px 16px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-white {
+  background-color: white;
+  color: #000;
+}
+
+.btn-white:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.btn-red {
+  background-color: #616161;
+  color: white;
+}
+
+.btn-red3 {
+  background-color: #f44336;
+  color: #ddd;
+}
+
+.btn-red4 {
+  background-color: #ffffff;
+  color: #616161;
+}
+
+.btn-red:hover {
+  background-color: #000000;
+}
+
+.btn-large {
+  padding: 16px 32px;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Contact form */
+.form-section {
+  margin-bottom: 16px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 32px 58px 32px 32px;
+  margin-top: 75px;
+}
+
+.footer p {
+  text-align: right;
+  margin: 0;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer a:hover {
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .sidebar.show {
+    display: block;
+  }
+  
+  .sidebar .close-btn {
+    display: block;
+  }
+  
+  .top-header {
+    display: block;
+  }
+  
+  .overlay.show {
+    display: block;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  
+  .team-col {
+    width: 100%;
+  }
+  
+  .half {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .jumbo {
+    font-size: 48px;
+  }
+  
+  .xxxlarge {
+    font-size: 36px;
+  }
+}

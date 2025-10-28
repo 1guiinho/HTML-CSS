@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Design de Interiores</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="sidebar" id="mySidebar">
+  <button onclick="w3_close()" class="close-btn">Fechar Menu</button>
+  <div class="container">
+    <h3><b>Design de<br>interiores</b></h3>
+  </div>
+  <div class="nav-links">
+    <a href="#" onclick="w3_close()">Início</a> 
+    <a href="#showcase" onclick="w3_close()">Portfólio</a> 
+    <a href="#services" onclick="w3_close()">Serviços</a> 
+    <a href="#designers" onclick="w3_close()">Designers</a> 
+    <a href="#packages" onclick="w3_close()">Pacotes</a> 
+    <a href="#contact" onclick="w3_close()">Contato</a>
+  </div>
+</nav>
+
+<!-- Top menu em telas pequenas -->
+<header class="top-header">
+  <button class="menu-btn" onclick="w3_open()">☰</button>
+  <span>Design de interiores</span>
+</header>
+
+<!-- Overlay ao abrir sidebar em telas pequenas -->
+<div class="overlay" onclick="w3_close()" id="myOverlay"></div>
+
+<!-- CONTEÚDO DA PÁGINA -->
+<div class="main-content">
+
+  <!-- Cabeçalho -->
+  <div class="container showcase-header" id="showcase">
+    <h1 class="jumbo"><b>Design de Interiores</b></h1>
+    <h1 class="xxxlarge text-red text-red1"><b>Portfólio.</b></h1>
+    <hr class="section-divider" id="divider1">
+  </div>
+  
+  <!-- Grade de fotos (modal) -->
+  <div class="row-padding">
+    <div class="half">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWu9R3GN0rreN3dGTddqf2urFljQ2DJfGAsLtBK_ZNvJG3mrNmuMgotuLRNmAovKYe5Ee0qD5wqJGdcyfm8BLxa6J2oT5zS_kmn4JtQzl66kXW8zJ0lDhZN1vz39HabbYd_owuQ3x6XfI/s1600/casa-moderna-vidro-integrada-decor-salteado-7.jpg" onclick="onClick(this)" alt="Concreto encontra tijolos" class="primari-img">
+      <img src="https://www.historiasdecasa.com.br/wp-content/uploads/2022/07/07-decoracao-casa-antiga-Carla-Historias-de-Casa-Westwing.jpg">
+      <img src="https://casaeconstrucao.vivadecora.com.br/wp-content/uploads/2018/02/Casas-modernas-com-decora%C3%A7%C3%A3o-em-preto-e-branco-Projeto-de-Lidia-Maciel.jpg" onclick="onClick(this)" alt="Paredes brancas com cadeiras de designer">
+    </div>
+
+    <div class="half">
+      <img src="https://st3.idealista.pt/news/arquivos/styles/open_graph/public/2018-11/arquitetura_0.jpg?VersionId=f8GPsCNq6J413mXhDM_iH2RhC6.uqoXB&itok=mF-Bu87t" onclick="onClick(this)" alt="Janelas para o átrio">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmt0X_0N5n5Yab22Ra8RPb87ZdXw8xZ2GzQj2uP7Zf3S4catkuawnyk-TsFbhOjCBDjJr3T6tZhX1OVPVTRbM1xNxGtQSk6ZXyXGZ5rCWPD9824mVAdtzp4nGF7ql5ZHyOoi7CaBFzsek/s1600/casa-moderna-vidro-integrada-decor-salteado-18.jpg" onclick="onClick(this)" alt="Quarto e escritório em um só espaço">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOGFfH2IBL7aLwmiB8s1GTN0PhW7W6PhBm76C0wge72AC75XZYzoTpyJsw-rUVGiQHkyw5rFt4fhyphenhypheneQGXgCsv4k03ZLvt8XTCYJn1aiRRsMX23-_-iBNOT8bRwRmLcpvtlmMJ5xeuYg1I/s1600/casa-moderna-vidro-integrada-decor-salteado-12.jpg" onclick="onClick(this)" alt="Design escandinavo">
+    </div>
+  </div>
+
+  <!-- Modal para imagens em tamanho real ao clicar -->
+  <div id="modal01" class="modal" onclick="this.style.display='none'">
+    <button class="close-modal">×</button>
+    <div class="modal-content">
+      <img id="img01">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Serviços -->
+  <div class="container section" id="services">
+    <h1 class="xxxlarge text-red"><b>Serviços.</b></h1>
+    <hr class="section-divider">
+    <p>Somos um serviço de design de interiores que foca no que é melhor para sua casa e no que é melhor para você!</p>
+    <p>Algum texto sobre nossos serviços - o que fazemos e o que oferecemos. Somos lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="container section" id="designers">
+    <h1 class="xxxlarge text-red"><b>Designers.</b></h1>
+    <hr class="section-divider">
+    <p>A melhor equipe do mundo.</p>
+    <p>Somos lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Nossos designers são cuidadosamente escolhidos</b>:</p>
+  </div>
+
+  <!-- A Equipe -->
+  <div class="team-row">
+    <div class="team-col">
+      <div class="team-card">
+        <img src="https://arquitetura.vivadecora.com.br/wp-content/uploads/2018/10/melhores-arquitetos-do-mundo-Le-Corbusier.jpg" alt="John">
+        <div class="container">
+            <h3>Le Corbusier</h3>
+            <p class="opacity">CEO & Fundador</p>
+            <p>Le Corbusier criou 5 pontos da arquitetura moderna, trazendo novas perspectivas na construção de espaços, como terrenos fluidos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="team-col">
+      <div class="team-card">
+        <img src="https://arquitetura.vivadecora.com.br/wp-content/uploads/2018/10/Melhores-arquitetos-do-mundo-Norman-Foster.jpg" alt="Jane">
+        <div class="container">
+          <h3>Norman Foster</h3>
+          <p class="opacity">Designer</p>
+          <p>Seu trabalho visionário responsável por criar a arquitetura High Tech, contribui hoje com sustentáveis ações nas cidades inteligentes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="team-col">
+      <div class="team-card">
+        <img src="https://arquitetura.vivadecora.com.br/wp-content/uploads/2018/10/Melhores-arquitetos-do-mundo-Frank-Gehry.jpg" alt="Mike">
+        <div class="container">
+          <h3>Frank Gehry
+</h3>
+          <p class="opacity">Arquiteto</p>
+          <p>As obras de Frank Gehry são marcadas pela estética ousada, formas complexas e uso de materiais diferenciados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pacotes / Tabelas de Preços -->
+  <div class="container section" id="packages">
+    <h1 class="xxxlarge text-red"><b>Pacotes.</b></h1>
+    <hr class="section-divider">
+    <p>Opções de pacote de até 1300 reais para decorar a sua casa pagando pouco!</p>
+  </div>
+
+  <div class="row-padding">
+  <div class="half">
+    <ul class="pricing-list">
+      <li class="header">Básico</li>
+      <li>Planejamento de Piso</li>
+      <li>10 horas de suporte</li>
+      <li>Fotografia</li>
+      <li>20% de desconto em móveis</li>
+      <li>Boas ofertas</li>
+      <li class="price">
+        <h2>R$ 189,99</h2>
+        <span class="opacity">por cômodo</span>
+      </li>
+      <li class="button-container">
+        <button class="btn btn-white btn-large">Inscrever-se</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="half">
+    <ul class="pricing-list">
+      <li class="headerpro">Pro</li>
+      <li>Planejamento de Piso</li>
+      <li>50 horas de suporte</li>
+      <li>Fotografia</li>
+      <li>50% de desconto em móveis</li>
+      <li>Ótimas ofertas</li>
+      <li class="price">
+        <h2>R$ 458,99</h2>
+        <span class="opacity">por cômodo</span>
+      </li>
+      <li class="button-container">
+        <button class="btn btn-red btn-large btn-red3">Inscrever-se</button>
+      </li>
+    </ul><br><br>
+  </div>
+
+  <div class="half">
+    <ul class="pricing-list">
+      <li class="headerDeluxe">Deluxe</li>
+      <li>Curadoria e Aquisição de Materiais</li>
+      <li>Fornecimento de Mobiliário Exclusivo</li>
+      <li>Projeto de Paisagismo/Jardim</li>
+      <li>Consultoria de Arte e Colecionismo</li>
+      <li>Gerenciamento de Obra</li>
+      <li>Design Sensorial e Tecnologia</li>
+      <li>110 horas de suporte</li>
+      <li>70% de desconto em móveis</li>
+      <li>Espetaculares ofertas</li>
+      <li class="price">
+        <h2>R$ 1.249,99</h2>
+        <span class="opacity">por casa</span>
+      </li>
+      <li class="button-container">
+        <button class="btn btn-red btn-large btn-red3">Inscrever-se</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="half">
+    <ul class="pricing-list">
+      <li class="header apartment">Apartment</li>
+      <li>Consultoria de Otimização</li>
+      <li>Planta de Iluminação e Elétrica</li>
+      <li>Projeto de Áreas Molhadas</li>
+      <li>Consultoria de Arte e Colecionismo</li>
+      <li>Gerenciamento de Obra</li>
+      <li>Design Sensorial e Tecnologia</li>
+      <li>30 horas de suporte</li>
+      <li>37% de desconto em móveis</li>
+      <li>Incríveis ofertas</li>
+      <li class="price">
+        <h2>R$ 335,99</h2>
+        <span class="opacity">por casa</span>
+      </li>
+      <li class="button-container">
+        <button class="btn btn-red btn-large btn-red4">Inscrever-se</button>
+      </li>
+    </ul>
+  </div>
+</div>
+  
+  <!-- Contato -->
+  <div class="container section" id="contact">
+    <h1 class="xxxlarge text-red"><b>Contato.</b></h1>
+    <hr class="section-divider">
+    <p>Você quer que a gente decore sua casa? Preencha o formulário e nos conte os detalhes : Adoramos conhecer novas pessoas!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="form-section">
+        <label>Nome</label>
+        <input class="form-input" type="text" name="Name" required>
+      </div>
+      <div class="form-section">
+        <label>Email</label>
+        <input class="form-input" type="text" name="Email" required>
+      </div>
+      <div class="form-section">
+        <label>Mensagem</label>
+        <input class="form-input" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="btn btn-red btn-large btn-block">Enviar Mensagem</button>
+    </form>  
+  </div>
+
+<!-- Fim do conteúdo da página -->
+</div>
+
+<!-- Rodapé -->
+<div class="footer">
+  <p>Desenvolvido por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a></p>
+</div>
+
+<script>
+// Script para abrir e fechar sidebar
+function w3_open() {
+  document.getElementById("mySidebar").classList.add("show");
+  document.getElementById("myOverlay").classList.add("show");
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").classList.remove("show");
+  document.getElementById("myOverlay").classList.remove("show");
+}
+
+// Galeria de Imagens Modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
